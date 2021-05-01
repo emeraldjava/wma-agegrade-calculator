@@ -23,7 +23,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 		<spring.batch.version>3.0.7.RELEASE</spring.batch.version>
-		<poi.version>3.11</poi.version>
+		<poi.version>5.0.0</poi.version>
 		<spring.batch.excel.version>0.5.3-SNAPSHOT</spring.batch.excel.version>
 	</properties>
 
