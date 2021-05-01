@@ -1,5 +1,8 @@
 # wma-agegrade-calculator
-Exposing a WMA age grade calculator via a REST API as a spring boot application.
+
+Exposing a WMA age grade calculator using supabase postgres DB.
+
+## Notes
 
 http://www.runscore.com/Alan/AgeGrade.html
 
