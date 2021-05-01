@@ -18,6 +18,9 @@ jobs:
         run: |
           npm install
           npm run build
+          env:
+            SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+            SUPABASE_ANON_PUBLIC: ${{ secrets.SUPABASE_ANON_PUBLIC }}
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.1
