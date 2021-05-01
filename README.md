@@ -2,6 +2,8 @@
 
 Exposing a WMA age grade calculator using supabase postgres DB.
 
+https://emeraldjava.github.io/wma-agegrade-calculator/
+
 ## Notes
 
 http://www.runscore.com/Alan/AgeGrade.html
