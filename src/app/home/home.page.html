@@ -14,6 +14,34 @@
   </ion-header>
 
   <div id="container">
-    <strong>Coming Soon</strong>
+
+    <ion-list>
+      <ion-item *ngFor="let event of events">
+        <ion-label>list {{event.name}}</ion-label>
+      </ion-item>
+    </ion-list>
+
+  <!-- https://edupala.com/ionic-table/ -->
+    <ion-content scroll="false" has-header="true" padded="true" >
+      <h2>a h2</h2>
+    </ion-content>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>Id</ion-col>
+        <ion-col>Name</ion-col>
+        <ion-col>Distance</ion-col>
+        <ion-col>Seconds</ion-col>
+        <ion-col>Time</ion-col>
+      </ion-row>
+      <ion-row *ngFor="let event of events">
+        <ion-col>{{event.name}}</ion-col>
+        <ion-col>{{event.name}}</ion-col>
+        <ion-col>{{event.distance}}</ion-col>
+        <ion-col>{{event.name}}</ion-col>
+        <ion-col>{{event.name}}</ion-col>
+      </ion-row>
+    </ion-grid>
+
   </div>
 </ion-content>
