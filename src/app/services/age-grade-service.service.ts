@@ -11,7 +11,7 @@ export class AgeGradeServiceService {
   supabase: SupabaseClient;
 
   constructor() {
-    this.supabase = createClient(environment.supabaseUrl, environment.supabaseKey);
+    this.supabase = createClient(environment.supabase.url, environment.supabase.apiKey);
   }
 
   async getEvents() {
