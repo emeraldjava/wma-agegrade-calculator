@@ -1,4 +1,6 @@
-import { writeFile } from 'fs';
+const { writeFile } = require('fs');
+const { argv } = require('yargs');
+//import { writeFile } from 'fs';
 
 // https://ferie.medium.com/how-to-pass-environment-variables-at-building-time-in-an-angular-application-using-env-files-4ae1a80383c
 // https://betterprogramming.pub/how-to-secure-angular-environment-variables-for-use-in-github-actions-39c07587d590
@@ -8,6 +10,9 @@ import { writeFile } from 'fs';
 const targetPath = './src/environments/environment.prod.ts';
 // Load node modules
 const colors = require('colors');
+require('dotenv').config();
+const environment = argv.environment;
+
 // `environment.ts` file structure
 const envConfigFile = `export const environment = {
    production: true,
@@ -19,7 +24,7 @@ const envConfigFile = `export const environment = {
 `;
 console.log(colors.magenta('The file `environment.ts` will be written with the following content: \n'));
 console.log(colors.grey(envConfigFile));
-writeFile(targetPath, envConfigFile, function (err) {
+writeFile(targetPath, envConfigFile, 'utf8', function (err) {
    if (err) {
        throw console.error(err);
    } else {
