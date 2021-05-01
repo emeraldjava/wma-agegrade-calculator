@@ -1,5 +1,9 @@
 const { writeFile } = require('fs');
 const { argv } = require('yargs');
+const { gitDescribeSync } = require('git-describe');
+const { resolve, relative } = require('path');
+const { writeFileSync, existsSync, mkdirSync } = require('fs-extra');
+
 //import { writeFile } from 'fs';
 
 // https://ferie.medium.com/how-to-pass-environment-variables-at-building-time-in-an-angular-application-using-env-files-4ae1a80383c
@@ -31,3 +35,22 @@ writeFile(targetPath, envConfigFile, 'utf8', function (err) {
        console.log(colors.magenta(`Angular environment.ts file generated correctly at ${targetPath} \n`));
    }
 });
+
+const gitInfo = gitDescribeSync({
+    dirtyMark: false,
+    dirtySemver: false,
+    customArguments: ['--tags']
+});
+console.log(gitInfo);
+if (!existsSync(__dirname + '/src/environments')) {
+    mkdirSync(__dirname + '/src/environments');
+}
+const file = resolve(__dirname, 'src', 'environments', 'version.ts');
+writeFileSync(file,
+    `// IMPORTANT: THIS FILE IS AUTO GENERATED! DO NOT MANUALLY EDIT OR CHECKIN!
+/* tslint:disable */
+export const VERSION = ${JSON.stringify(gitInfo, null, 4)};
+/* tslint:enable */
+`, { encoding: 'utf-8' });
+
+console.log(`Wrote version info ${gitInfo.raw} to ${relative(resolve(__dirname, '..'), file)}`);
