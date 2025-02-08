@@ -1,0 +1,46 @@
+openapi: '3.1.0'
+info:
+  title: WMA Calculator API
+  version: '1.0'
+servers:
+  - url: https://api.server.test/v1
+components:
+  schemas:
+    WorldMasterAthletics:
+      type: object
+      description: WMA
+      items: 
+        $ref: "#/components/schemas/AgeRatioList" 
+    AgeRatioList:
+      type: object
+      description: List
+      items:
+        $ref: '#/components/schemas/AgeRatio'
+    # https://stackoverflow.com/questions/46472543/specifying-multiple-types-for-additionalproperties-through-swagger-openapi
+    AgeRatio:
+      type: object
+      description: AgeRatio
+      additionalProperties:
+        type:
+          - string
+          - integer
+security: [] 
+paths:
+  /wma:
+    get:
+      operationId: abc
+      summary: wma details
+      responses:
+        '400':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/WorldMasterAthletics"
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/WorldMasterAthletics"
+                
