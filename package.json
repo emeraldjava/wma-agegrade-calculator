@@ -5,6 +5,7 @@
   "author": "emeraldjava",
   "homepage": "",
   "scripts": {
+    "build": "pnpm -r run build"
   },
   "private": true,
   "workspaces": [
