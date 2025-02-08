@@ -13,11 +13,19 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Install and Build
+
+      # https://github.com/pnpm/action-setup
+      # https://stackoverflow.com/questions/74884763/pnpm-github-actions-flow
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+        with:
+          version: 10
+          run_install: false
+
+      - name: Install node
         uses: actions/setup-node@v4
         with:
-          node-version: '23'
+          node-version: '20'
           check-latest: true
-          cache: 'npm'
-      - run: npm ci
-      - run: npm run build --if-present
+          cache: 'pnpm'
+      - run: pnpm install
