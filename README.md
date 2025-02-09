@@ -56,3 +56,7 @@ https://shancarter.github.io/mr-data-converter/
 
 https://github.com/jbuckner/agegrader/blob/master/agegrader/age_grading_data.json
 
+
+## 2025-02-09
+
+- https://github.com/bakeruk/modern-typescript-monorepo-example/tree/main

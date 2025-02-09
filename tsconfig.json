@@ -1,0 +1,6 @@
+{
+    // https://github.com/emeraldjava/emeraldjava-modern-typescript-monorepo-example/blob/main/tsconfig.json
+    "extends": "./tsconfig.base.json",
+    "include": ["**/*", ".*.js"]
+}
+  
