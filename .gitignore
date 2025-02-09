@@ -35,3 +35,6 @@ node_modules/
 supabase.html
 .env
 notes.md
+
+# typescript - https://medium.com/hike-medical/ditching-yarn-creating-a-monorepo-with-pnpm-workspaces-6fa7e3bfe19c
+*.tsbuildinfo

@@ -59,4 +59,6 @@ https://github.com/jbuckner/agegrader/blob/master/agegrader/age_grading_data.jso
 
 ## 2025-02-09
 
+- https://medium.com/hike-medical/ditching-yarn-creating-a-monorepo-with-pnpm-workspaces-6fa7e3bfe19c
+- https://github.com/Hike-Medical/engineering-blog/tree/main/pnpm-monorepo
 - https://github.com/bakeruk/modern-typescript-monorepo-example/tree/main

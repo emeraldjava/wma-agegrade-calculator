@@ -1,14 +1,19 @@
 {
   "name": "wma-agegrade-calculator",
+  "private": true,
   "description": "A set of node libraries to support wma agegrade calculator",
   "version": "0.0.2",
   "author": "emeraldjava",
   "homepage": "",
   "scripts": {
-    "build": "pnpm -r run build"
-  },
-  "private": true,
+    "build": "pnpm -r run build",
+    "clean": "rm -rf node_modules && pnpm --filter 'wma-*/*' clean"
+  }, 
   "dependencies": {
     "typescript": "^5.7.3"
-  }
+  },
+  "engines": {
+    "node": "^23"
+  },
+  "packageManager": "pnpm@8.15.5"
 }
