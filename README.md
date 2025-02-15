@@ -56,6 +56,22 @@ https://shancarter.github.io/mr-data-converter/
 
 https://github.com/jbuckner/agegrader/blob/master/agegrader/age_grading_data.json
 
+## 2025-02-14
+
+- https://thriveread.com/create-monorepos-with-pnpm-workspaces/
+
+## 2025-02-12
+
+setup of esm vs commonjs builds
+
+- https://thesametech.com/how-to-build-typescript-project/
+- https://docs.astro.build/en/reference/publish-to-npm/
+- https://docs.astro.build/en/guides/integrations-guide/react/
+
+## 2025-02-11
+
+- https://www.squash.io/how-to-add-a-dev-dependency-with-pnpm/
+- https://codingforseo.com/blog/mjs-vs-cjs-files/
 
 ## 2025-02-09
 

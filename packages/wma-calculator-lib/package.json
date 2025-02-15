@@ -5,9 +5,8 @@
     "keywords": [],
     "author": "",
     "license": "ISC",
-    "module": "./dist/index.js",
-    "types": "./dist/index.d.ts",
-    "main": "./dist/cjs/index.js",
+    "module": "module",
+    "main": "./dist/mjs/index.js",
     "exports": {
       ".": {
         "import": "./dist/index.js",
@@ -19,10 +18,7 @@
     ],
     "scripts": {
       "build": "npx tsc --build && npx tsc --project tsconfig.cjs.json",
-      "dev": "npx tsc --watch",
-      "lint": "npx eslint .",
-      "format": "npx prettier --check . --ignore-path ../../.gitignore",
-      "clean": "rm -rf node_modules dist"
+      "dev": "npx tsc --watch"
     }
   }
   

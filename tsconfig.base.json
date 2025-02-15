@@ -1,10 +1,12 @@
 {
     "compilerOptions": {
       "module": "ESNext",
-      "moduleResolution": "Node",
-      "target": "ES2020",
+      "moduleResolution": "nodenext",
+      "target": "ESNext",
+      "outDir": "./dist",
 
       /* Basic Options */
+      "strict": true,
       "incremental": true,
       "declaration": true,
       "allowJs": true,
@@ -19,10 +21,18 @@
       "noImplicitThis": true,
       "alwaysStrict": true,
       "resolveJsonModule": true,
+      "allowImportingTsExtensions": true,
   
       /* Experimental Options */
       "experimentalDecorators": true,
-      "emitDecoratorMetadata": false
+      "emitDecoratorMetadata": true,
+
+      /* https://thriveread.com/create-monorepos-with-pnpm-workspaces/ */
+      "esModuleInterop": true,
+      "noUnusedLocals": true,
+      "skipLibCheck": true,
+      "sourceMap": true,
+      "jsx": "react-jsx",
     }
   }
   
