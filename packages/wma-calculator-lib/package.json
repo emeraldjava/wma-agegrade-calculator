@@ -5,19 +5,11 @@
     "keywords": [],
     "author": "",
     "license": "ISC",
-    "module": "module",
-    "main": "./dist/mjs/index.js",
-    "exports": {
-      ".": {
-        "import": "./dist/index.js",
-        "require": "./dist/cjs/index.js"
-      }
-    },
-    "files": [
-      "dist/**"
-    ],
+    "main": "index.js",
     "scripts": {
-      "build": "npx tsc --build",
+      "build:clean": "rm -rf ./dist",
+      "build": "tsc",
+      "buildx": "npx tsc --build ./tsconfig.esm.json",
       "dev": "npx tsc --watch"
     }
   }
