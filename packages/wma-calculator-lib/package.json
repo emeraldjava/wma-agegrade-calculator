@@ -10,7 +10,8 @@
       "build:clean": "rm -rf ./dist",
       "build": "tsc",
       "buildx": "npx tsc --build ./tsconfig.esm.json",
-      "dev": "npx tsc --watch"
+      "dev": "npx tsc --watch",
+      "test": "npx jest"
     }
   }
   
