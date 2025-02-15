@@ -60,6 +60,8 @@ https://github.com/jbuckner/agegrader/blob/master/agegrader/age_grading_data.jso
 
 git switch --create feature/ui-app-20250215
 
+- https://solana.stackexchange.com/questions/3551/how-to-solve-typescript-errors-ts2307-cannot-find-module
+
 ## 2025-02-14
 
 - https://thriveread.com/create-monorepos-with-pnpm-workspaces/

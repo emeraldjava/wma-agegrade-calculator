@@ -26,7 +26,7 @@ importers:
 
   apps/ui:
     dependencies:
-      '@wma-agegrade-calculator/lib':
+      '@wma-agegrade-calculator/wma-calculator-lib':
         specifier: workspace:^
         version: link:../../packages/wma-calculator-lib
       react:

@@ -7,8 +7,10 @@
   "homepage": "",
   "scripts": {
     "build": "pnpm -r run build",
+    "dev": "pnpm build --watch",
     "lint": "pnpm --filter '@wma*/*' lint",
     "format": "pnpm --filter '@wma*/*' format",
+    "cleandep": "rm -rf node_modules && pnpm -r exec rm -rf node_modules",
     "clean": "rm -rf node_modules && pnpm --filter '@wma*/*' clean"
   },
   "engines": {

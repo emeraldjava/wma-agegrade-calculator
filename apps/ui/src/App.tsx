@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import { handleOperation, Operation } from "@wma-agegrade-calculator/wma-calculator-lib";
 import './App.css'
-import {handleOperation,Operation} from '@wma-agegrade-calculator/lib'
+
+//import { handleOperation, Operation } from '@wma-agegrade-calculator/wma-calculator-lib'
 
 function App() {
   /* https://thriveread.com/create-monorepos-with-pnpm-workspaces/ */
@@ -24,7 +26,7 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
+      <h1>Hi Vite + React</h1>
       <div className="card">
         <div>
           <p>The result is: {result}</p>
