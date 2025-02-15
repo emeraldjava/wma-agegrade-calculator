@@ -2,4 +2,4 @@ apis:
   wma:
     root: ./openapi/wma-openapi.yaml
     x-openapi-ts:
-      output: ./ts/wma-openapi-schema.d.ts
+      output: ./types/wma-openapi-schema.d.ts
