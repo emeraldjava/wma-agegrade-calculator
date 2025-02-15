@@ -2,7 +2,7 @@
     // https://thesametech.com/how-to-build-typescript-project/
     // https://github.com/emeraldjava/emeraldjava-modern-typescript-monorepo-example/blob/main/tsconfig.json
     "extends": "./tsconfig.base.json",
-    "include": ["**/*", ".*.js"],
+    "include": ["src"],
     "exclude": ["node_modules"]
 }
   

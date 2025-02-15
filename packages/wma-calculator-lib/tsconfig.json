@@ -1,16 +1,17 @@
 {
-    "extends": "../../tsconfig.json",
+    //"extends": "../../tsconfig.base.json",
     "compilerOptions": {
-      "baseUrl": "./src",
+      //"baseUrl": "./src",
       "outDir": "./dist",
-      "module": "Node16",
-      "isolatedModules": true,
+      "isolatedModules": false,
       "declaration": true,
-      "declarationMap": true,
-      "sourceMap": true,
-      "removeComments": false
+      "declarationMap": false,
+      "sourceMap": false
+      //"esModuleInterop": true
     },
+    //"include": ["./src"],
     "include": ["./src"],
-    "files": ["./src/index.ts"]
+    "exclude": ["node_modules","tests",]
+//    "files": ["./src/index.ts"]
   }
   
