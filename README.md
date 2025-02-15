@@ -60,7 +60,10 @@ https://github.com/jbuckner/agegrader/blob/master/agegrader/age_grading_data.jso
 
 git switch --create feature/ui-app-20250215
 
+- https://www.kochan.io/nodejs/pnpms-strictness-helps-to-avoid-silly-bugs.html
+- https://www.testim.io/blog/typescript-unit-testing-101/
 - https://solana.stackexchange.com/questions/3551/how-to-solve-typescript-errors-ts2307-cannot-find-module
+- https://www.chucksacademy.com/en/topic/typescript-integration/handling-libraries-and-dependencies
 
 ## 2025-02-14
 

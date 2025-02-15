@@ -1,10 +1,9 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import { handleOperation, Operation } from "@wma-agegrade-calculator/wma-calculator-lib";
 import './App.css'
-
-//import { handleOperation, Operation } from '@wma-agegrade-calculator/wma-calculator-lib'
+import { handleOperation, Operation } from "@wma-agegrade-calculator/wma-calculator-lib";
+//type handleOperation = handleOperation
 
 function App() {
   /* https://thriveread.com/create-monorepos-with-pnpm-workspaces/ */

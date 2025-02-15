@@ -1,9 +1,7 @@
 "use strict";
+//import { Operation } from './types';
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.handleOperation = exports.Operation = exports.hello = void 0;
-var hello = function () { return 'Hello from "@wma/lib"!'; };
-exports.hello = hello;
-// export * from '@wma-agegrade-calculator/lib';
+exports.handleOperation = exports.Operation = void 0;
 // the supported operations
 // from https://thriveread.com/create-monorepos-with-pnpm-workspaces/
 var Operation;

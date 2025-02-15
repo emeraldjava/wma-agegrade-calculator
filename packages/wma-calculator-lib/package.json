@@ -5,13 +5,14 @@
     "keywords": [],
     "author": "",
     "license": "ISC",
-    "main": "index.js",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
     "scripts": {
-      "build:clean": "rm -rf ./dist",
-      "build": "tsc",
-      "buildx": "npx tsc --build ./tsconfig.esm.json",
+      "clean": "rm -rf ./dist",
+      "build": "npx tsc --build tsconfig.json",
       "dev": "npx tsc --watch",
-      "test": "npx jest"
+      "test": "npx jest",
+      "typecheck": "tsc"
     }
   }
   

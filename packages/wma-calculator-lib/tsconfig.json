@@ -1,11 +1,17 @@
 {
-    //"extends": "../../tsconfig.json",
+    //"extends": "../../tsconfig.base.json",
     "compilerOptions": {
       //"baseUrl": "./src",
       "outDir": "./dist",
-      "esModuleInterop": true
+      "isolatedModules": false,
+      "declaration": true,
+      "declarationMap": false,
+      "sourceMap": false
+      //"esModuleInterop": true
     },
     //"include": ["./src"],
-    "files": ["./src/index.ts"]
+    "include": ["./src"],
+    "exclude": ["node_modules","tests",]
+//    "files": ["./src/index.ts"]
   }
   

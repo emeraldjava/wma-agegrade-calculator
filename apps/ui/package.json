@@ -5,12 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "npx tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@wma-agegrade-calculator/wma-calculator-lib": "workspace:^",
+    "@wma-agegrade-calculator/wma-calculator-lib": "workspace:*",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },

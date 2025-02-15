@@ -1,10 +1,12 @@
+//import { Operation } from './types';
+
 // the supported operations
 // from https://thriveread.com/create-monorepos-with-pnpm-workspaces/
 export enum Operation {
-add,
-subtract,
-divide,
-multiply
+       add,
+       subtract,
+       divide,
+       multiply
 }
 
 // the function to handle the arithmetic operation
