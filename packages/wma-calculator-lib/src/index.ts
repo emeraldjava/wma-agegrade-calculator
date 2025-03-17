@@ -9,6 +9,10 @@ export enum Operation {
        multiply
 }
 
+export function helloWorld(message:string) {
+       return `Hello ${message}`;
+}
+
 // the function to handle the arithmetic operation
 
 export const handleOperation = (num1:number,num2:number,operation:Operation): number => {

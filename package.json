@@ -2,16 +2,19 @@
   "name": "wma-agegrade-calculator",
   "private": true,
   "description": "A set of node libraries to support wma agegrade calculator",
-  "version": "2025.02.14",
+  "version": "2025.03.17",
   "author": "emeraldjava",
   "homepage": "",
   "scripts": {
     "build": "pnpm -r run build",
+    "build:docs": "pnpm -r run build --filter=@wma-agegrade/docs",
+    "build:all": "turbo run build",
     "dev": "pnpm build --watch",
     "lint": "pnpm --filter '@wma*/*' lint",
     "format": "pnpm --filter '@wma*/*' format",
     "cleandep": "rm -rf node_modules && pnpm -r exec rm -rf node_modules",
-    "clean": "rm -rf node_modules && pnpm --filter '@wma*/*' clean"
+    "clean": "rm -rf node_modules && pnpm --filter '@wma*/*' clean",
+    "preinstall": "npx only-allow pnpm"
   },
   "engines": {
     "node": "^23"
@@ -25,7 +28,10 @@
     "npm-run-all": "^4.1.5",
     "prettier": "^3.5.1",
     "ts-jest": "^29.2.5",
-    "typescript": "^5.7.3"
+    "typescript": "^5.7.3",
+    "turbo": "^2.4.4",
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*"
   },
   "dependencies": {
     "@jest/globals": "^29.7.0"
