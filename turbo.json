@@ -5,6 +5,10 @@
         "dependsOn": ["^build"],
         "outputs": ["dist/**", "umd/**", "build/**", ".next/**"]
       },
+      "test": {
+        "dependsOn": ["^build"],
+        "inputs": ["src/**/*.ts", "src/**/*.tsx", "test/**/*.ts"]
+      },
       "lint": {},
       "type-check": {},
       "dev": {

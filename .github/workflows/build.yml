@@ -20,8 +20,8 @@ jobs:
 
       # https://github.com/pnpm/action-setup
       # https://stackoverflow.com/questions/74884763/pnpm-github-actions-flow
-      - uses: pnpm/action-setup@v4
-        name: Install pnpm
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
         with:
           run_install: false
 
@@ -31,5 +31,9 @@ jobs:
           node-version: '23'
           check-latest: true
           cache: 'pnpm'
-      - run: pnpm install
-      - run: pnpm build
+
+      - name: Install dependencies
+        run: pnpm install
+        
+      - name: Build 
+        run: pnpm build
