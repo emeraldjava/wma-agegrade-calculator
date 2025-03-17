@@ -1,16 +1,20 @@
 {
     "compilerOptions": {
-      "module": "ESNext",
-      "moduleResolution": "nodenext",
-      "target": "ESNext",
+      "baseUrl": ".",
+      "target": "esnext",
+      "module": "esnext",
+      "moduleResolution": "node",
       "outDir": "./dist",
-
+      "paths": {
+        "*": ["src/*", "node_modules/*"]
+      },
       /* Basic Options */
       "strict": true,
       "incremental": true,
       "declaration": true,
       "allowJs": true,
       "noEmit": true,
+      "preserveSymlinks": true,
   
       /* Strict Type-Checking Options */
       "noImplicitAny": true,
@@ -31,6 +35,7 @@
       "esModuleInterop": true,
       "noUnusedLocals": true,
       "skipLibCheck": true,
+      "noFallthroughCasesInSwitch": true,
       "sourceMap": true,
       "jsx": "react-jsx",
     }

@@ -56,6 +56,28 @@ https://shancarter.github.io/mr-data-converter/
 
 https://github.com/jbuckner/agegrader/blob/master/agegrader/age_grading_data.json
 
+## 2025-03-17
+
+    $ pnpm setup
+    Next configuration changes were made:
+    PNPM_HOME=C:\Users\pault\AppData\Local\pnpm
+    Path=%PNPM_HOME%;C:\Users\pault\AppData\Local\Programs\oh-my-posh\bin\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;C:\Users\pault\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\pault\AppData\Roaming\npm;
+
+- https://vinayak-hegde.medium.com/building-a-monorepo-with-pnpm-and-turborepo-a-journey-to-efficiency-cfeec5d182f5
+- https://github.com/chengchao/nextjs-nestjs-pnpm-turborepo-monorepo-example
+- https://nhost.io/blog/how-we-configured-pnpm-and-turborepo-for-our-monorepo
+- https://turbo.build/repo/docs
+
+
+## 2025-02-15
+
+git switch --create feature/ui-app-20250215
+
+- https://www.kochan.io/nodejs/pnpms-strictness-helps-to-avoid-silly-bugs.html
+- https://www.testim.io/blog/typescript-unit-testing-101/
+- https://solana.stackexchange.com/questions/3551/how-to-solve-typescript-errors-ts2307-cannot-find-module
+- https://www.chucksacademy.com/en/topic/typescript-integration/handling-libraries-and-dependencies
+
 ## 2025-02-14
 
 - https://thriveread.com/create-monorepos-with-pnpm-workspaces/

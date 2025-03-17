@@ -1,24 +1,18 @@
 {
-    "name": "@wma-agegrade-calculator/lib",
+    "name": "@wma-agegrade-calculator/wma-calculator-lib",
     "version": "1.0.0",
     "description": "",
     "keywords": [],
     "author": "",
     "license": "ISC",
-    "module": "module",
-    "main": "./dist/mjs/index.js",
-    "exports": {
-      ".": {
-        "import": "./dist/index.js",
-        "require": "./dist/cjs/index.js"
-      }
-    },
-    "files": [
-      "dist/**"
-    ],
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
     "scripts": {
-      "build": "npx tsc --build",
-      "dev": "npx tsc --watch"
+      "clean": "rm -rf ./dist",
+      "build": "npx tsc --build tsconfig.json",
+      "dev": "npx tsc --watch",
+      "test": "npx jest",
+      "typecheck": "tsc"
     }
   }
   
