@@ -1,26 +1,44 @@
 {
-  "extends": "@tsconfig/node-lts-strictest/tsconfig.json",
+  //"extends": "@tsconfig/node-lts-strictest/tsconfig.json",
   "compilerOptions": {
-    "outDir": "dist",
-    /* Basic Options */
-    "incremental": true,
+    "composite": false,
     "declaration": true,
-    "allowJs": true,
-    "noEmit": true,
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowImportingTsExtensions": false,
+    "noEmit": false,
+    "inlineSources": false,
+    "isolatedModules": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "preserveWatchOutput": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "strictNullChecks": true
 
-    /* Strict Type-Checking Options */
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "strictFunctionTypes": true,
-    "strictBindCallApply": true,
-    "strictPropertyInitialization": false,
-    "noImplicitThis": true,
-    "alwaysStrict": true,
-    "resolveJsonModule": true,
+    // "outDir": "dist",
+    // /* Basic Options */
+    // "incremental": true,
+    // "declaration": true,
+    // "allowJs": true,
+    // "noEmit": false,
 
-    /* Experimental Options */
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": false,
-    "verbatimModuleSyntax": true
+    // /* Strict Type-Checking Options */
+    // "noImplicitAny": true,
+    // "strictNullChecks": true,
+    // "strictFunctionTypes": true,
+    // "strictBindCallApply": true,
+    // "strictPropertyInitialization": false,
+    // "noImplicitThis": true,
+    // "alwaysStrict": true,
+    // "resolveJsonModule": true,
+
+    // /* Experimental Options */
+    // "experimentalDecorators": true,
+    // "emitDecoratorMetadata": false,
+    // "verbatimModuleSyntax": true
   }
 }

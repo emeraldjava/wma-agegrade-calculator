@@ -12,7 +12,7 @@
 Thumbs.db
 UserInterfaceState.xcuserstate
 $RECYCLE.BIN/
-dist/*
+*/**/dist/*
 *.turbo/*
 
 *.log
@@ -44,3 +44,5 @@ notes.md
 
 # typescript - https://medium.com/hike-medical/ditching-yarn-creating-a-monorepo-with-pnpm-workspaces-6fa7e3bfe19c
 *.tsbuildinfo
+packages/wma-openapi-schema/dist/*
+packages/wma-calculator-lib/dist/*

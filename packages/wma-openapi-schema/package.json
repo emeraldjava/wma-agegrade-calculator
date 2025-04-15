@@ -4,11 +4,12 @@
   "description": "wma-openapi-schema",
   "type": "module",
   "scripts": {
-    "generate-ts": "npx openapi-codegen gen -c openapi-codegen.config.ts wmaAgeGrade",
+    "generate-ts": "npx openapi-codegen gen -c ./src/openapi-codegen.config.ts wmaAgeGrade",
     "generate-types": "npx openapi-typescript --input ./openapi/wmaAgeGrade.yaml --output ./src/types/",
-    "generate-zod": "npx openapi-to-zod --input ./openapi/wmaAgeGrade.yaml --output ./src/zod/",
-    "build": "npm run generate-ts",
-    "clean:build": "rimraf ./dist"
+    "generate-zod": "npx openapi-to-zod --input ./openapi/wmaAgeGrade.yaml --output ./src --fileExt ts",
+    "compile": "tsc -p tsconfig.build.json",
+    "build": "pnpm run generate-ts && pnpm run generate-zod && pnpm run compile",
+    "clean": "rimraf ./dist"
   },
   "keywords": [],
   "author": "",
