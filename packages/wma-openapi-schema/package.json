@@ -2,11 +2,13 @@
   "name": "@wma-agegrade-calculator/schema",
   "version": "1.0.0",
   "description": "wma-openapi-schema",
+  "type": "module",
   "scripts": {
-    "generate-ts": "npx openapi-codegen gen wmaAgeGrade",
+    "generate-ts": "npx openapi-codegen gen -c openapi-codegen.config.ts wmaAgeGrade",
     "generate-types": "npx openapi-typescript --input ./openapi/wmaAgeGrade.yaml --output ./src/types/",
     "generate-zod": "npx openapi-to-zod --input ./openapi/wmaAgeGrade.yaml --output ./src/zod/",
-    "build": "npm run generate-ts"
+    "build": "npm run generate-ts",
+    "clean:build": "rimraf ./dist"
   },
   "keywords": [],
   "author": "",
@@ -18,5 +20,8 @@
     "openapicmd": "^2.6.1",
     "typescript": "^5.7.3",
     "openapi-typescript": "^7.6.1"
+  },
+  "publishConfig": {
+    "directory": "dist"
   }
 }

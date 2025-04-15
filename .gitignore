@@ -12,6 +12,8 @@
 Thumbs.db
 UserInterfaceState.xcuserstate
 $RECYCLE.BIN/
+dist/*
+*.turbo/*
 
 *.log
 log.txt
@@ -30,6 +32,7 @@ npm-debug.log*
 /plugins
 /www
 /docs
+.turbo/*
 
 node_modules/
 supabase.html

@@ -8,10 +8,10 @@
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "scripts": {
-      "clean": "rm -rf ./dist",
-      "build": "npx tsc --build tsconfig.json",
+      "clean:build": "rimraf ./dist",
+      "build": "tsc -p tsconfig.build.json",
       "dev": "npx tsc --watch",
-      "test": "npx jest",
+      "test": "jest",
       "typecheck": "tsc"
     }
   }
