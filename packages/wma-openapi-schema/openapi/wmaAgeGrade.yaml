@@ -20,10 +20,54 @@ components:
     AgeRatio:
       type: object
       description: AgeRatio
-      additionalProperties:
+      properties: 
+        event:
+          $ref: "#/components/schemas/Event"
+        gender: 
+          $ref: "#/components/schemas/Gender"  
+        age:
+          type: integer
+          description: The age of the athlete.
+    Event:
+      type: object
+      description: Event
+      properties: 
+        name:
+          type: string
+          description: The name of the event.
+        code:
+
         type:
-          - string
-          - integer
+          $ref: "#/components/schemas/EventType"  
+    EventType:
+      type: string
+      description: The event type of the athlete age ratio group.
+      enum: 
+        - Time
+        - Jump
+        - Throw
+    EventCode:
+      type: string
+      description: The event code of the athlete age ratio group.
+      enum: 
+        - 100m
+        - 110mh
+        - 200m
+        - 400m
+        - 800m
+        - 1000m
+        - 1500m
+        - 3000m
+        - 5000m
+        - 10000m
+        - Marathon
+        - HalfMarathon    
+    Gender:
+      type: string
+      description: The gender of the athlete age ratio group.
+      enum: 
+        - Male
+        - Female
 security: [] 
 paths:
   /wma:
