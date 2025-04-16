@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "wma-agegrade-data",
   "type": "module",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc -p tsconfig.build.json -v",
     "start": "node dist/index.js",
