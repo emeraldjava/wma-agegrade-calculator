@@ -58,6 +58,15 @@ https://github.com/jbuckner/agegrader/blob/master/agegrader/age_grading_data.jso
 
 ## 2025-04-16
 
+### process manager
+
+    npx kill-port 3000
+
+- https://stackoverflow.com/questions/39322089/node-js-port-3000-already-in-use-but-it-actually-isnt
+- https://pm2.keymetrics.io/docs/usage/quick-start/
+- https://medium.com/@s.atmaramani/node-js-process-managers-tools-detailed-comparision-for-ex-a7ca813b7e8b
+
+- https://stackoverflow.com/questions/77232531/run-of-a-next-js-app-stuck-npm-run-dev-doesnt-work
 - https://jsupskills.dev/next-js-15-folder-structure-best-practices/
 - https://www.wisp.blog/blog/the-ultimate-guide-to-organizing-your-nextjs-15-project-structure
 
