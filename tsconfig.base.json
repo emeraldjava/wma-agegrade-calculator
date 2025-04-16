@@ -1,43 +1,44 @@
 {
-    "compilerOptions": {
-      "baseUrl": ".",
-      "target": "esnext",
-      "module": "esnext",
-      "moduleResolution": "node",
-      "outDir": "./dist",
-      "paths": {
-        "*": ["src/*", "node_modules/*"]
-      },
-      /* Basic Options */
-      "strict": true,
-      "incremental": true,
-      "declaration": true,
-      "allowJs": true,
-      "noEmit": true,
-      "preserveSymlinks": true,
-  
-      /* Strict Type-Checking Options */
-      "noImplicitAny": true,
-      "strictNullChecks": true,
-      "strictFunctionTypes": true,
-      "strictBindCallApply": true,
-      "strictPropertyInitialization": false,
-      "noImplicitThis": true,
-      "alwaysStrict": true,
-      "resolveJsonModule": true,
-      "allowImportingTsExtensions": true,
-  
-      /* Experimental Options */
-      "experimentalDecorators": true,
-      "emitDecoratorMetadata": true,
+  //"extends": "@tsconfig/node-lts-strictest/tsconfig.json",
+  "compilerOptions": {
+    "composite": false,
+    "declaration": true,
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowImportingTsExtensions": false,
+    "noEmit": false,
+    "inlineSources": false,
+    "isolatedModules": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "preserveWatchOutput": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "strictNullChecks": true
 
-      /* https://thriveread.com/create-monorepos-with-pnpm-workspaces/ */
-      "esModuleInterop": true,
-      "noUnusedLocals": true,
-      "skipLibCheck": true,
-      "noFallthroughCasesInSwitch": true,
-      "sourceMap": true,
-      "jsx": "react-jsx",
-    }
+    // "outDir": "dist",
+    // /* Basic Options */
+    // "incremental": true,
+    // "declaration": true,
+    // "allowJs": true,
+    // "noEmit": false,
+
+    // /* Strict Type-Checking Options */
+    // "noImplicitAny": true,
+    // "strictNullChecks": true,
+    // "strictFunctionTypes": true,
+    // "strictBindCallApply": true,
+    // "strictPropertyInitialization": false,
+    // "noImplicitThis": true,
+    // "alwaysStrict": true,
+    // "resolveJsonModule": true,
+
+    // /* Experimental Options */
+    // "experimentalDecorators": true,
+    // "emitDecoratorMetadata": false,
+    // "verbatimModuleSyntax": true
   }
-  
+}

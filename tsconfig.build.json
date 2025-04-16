@@ -1,5 +1,12 @@
 {
-    "extends": "./tsconfig.base.json",
-    "compilerOptions": {}
-  }
-  
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "incremental": true,
+    "noEmit": false,
+    "outDir": "./dist",
+    "declaration": true,
+    "declarationMap": true,
+    "verbatimModuleSyntax": false // Rep
+  },
+  "include": ["src/**/*"]
+}
