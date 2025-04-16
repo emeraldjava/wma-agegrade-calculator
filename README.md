@@ -1,5 +1,7 @@
 # wma-agegrade-calculator
 
+![GitHub CI](https://github.com/emeraldjava/wma-agegrade-calculator/actions/workflows/build.yml/badge.svg)
+
 Exposing a WMA age grade calculator using supabase postgres DB.
 
 https://emeraldjava.github.io/wma-agegrade-calculator/
