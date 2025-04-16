@@ -20,7 +20,7 @@ http://www.runningforfitness.org/faq/agegrading
 
 ## DB Schema
 
-- Athelete ~200
+- Athlete ~200
 age
 gender
 
@@ -33,7 +33,7 @@ factorSeconds
 factorTime
 
 - Result
-athelete
+athlete
 record
 agerank
 minRange - boolean (true if only age range is known. age should be 35, 40 etc)
@@ -47,7 +47,7 @@ isSpecific boolean
 list and add results
 
 ## Graph
-show gragh of last week, with ages, distances and age ranks.
+show graph of last week, with ages, distances and age ranks.
 
 
 # Mr Data Converter - Excel to Json
@@ -57,6 +57,10 @@ https://shancarter.github.io/mr-data-converter/
 https://github.com/jbuckner/agegrader/blob/master/agegrader/age_grading_data.json
 
 ## 2025-04-16
+
+### types
+
+- https://blog.angular-university.io/typescript-2-type-system-how-do-type-definitions-work-in-npm-when-to-use-types-and-why-what-are-compiler-opt-in-types/
 
 ### process manager
 
