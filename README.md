@@ -56,6 +56,11 @@ https://shancarter.github.io/mr-data-converter/
 
 https://github.com/jbuckner/agegrader/blob/master/agegrader/age_grading_data.json
 
+## 2025-04-16
+
+- https://jsupskills.dev/next-js-15-folder-structure-best-practices/
+- https://www.wisp.blog/blog/the-ultimate-guide-to-organizing-your-nextjs-15-project-structure
+
 ## 2025-03-17
 
 nest setup
