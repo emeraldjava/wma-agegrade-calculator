@@ -1,5 +1,5 @@
 {
-  "name": "wma-agegrade-calculator",
+  "name": "wma-agegrade",
   "private": true,
   "description": "A set of node libraries to support wma agegrade calculator",
   "version": "2025.04.16",

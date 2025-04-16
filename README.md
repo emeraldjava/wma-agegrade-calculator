@@ -62,6 +62,7 @@ https://github.com/jbuckner/agegrader/blob/master/agegrader/age_grading_data.jso
 
 ### types
 
+- https://nx.dev/blog/setup-a-monorepo-with-pnpm-workspaces-and-speed-it-up-with-nx
 - https://blog.angular-university.io/typescript-2-type-system-how-do-type-definitions-work-in-npm-when-to-use-types-and-why-what-are-compiler-opt-in-types/
 
 ### process manager

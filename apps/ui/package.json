@@ -1,5 +1,5 @@
 {
-  "name": "@wma-agegrade-calculator/ui",
+  "name": "wma-ui",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,7 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@wma-agegrade-calculator/wma-calculator-lib": "workspace:*",
+    "calculator": "workspace:*",
     "next": "15.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

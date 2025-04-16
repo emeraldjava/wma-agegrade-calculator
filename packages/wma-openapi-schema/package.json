@@ -1,5 +1,5 @@
 {
-  "name": "@wma-agegrade-calculator/schema",
+  "name": "schema",
   "version": "1.0.0",
   "description": "wma-openapi-schema",
   "type": "module",
