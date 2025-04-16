@@ -16,8 +16,6 @@
     "noUnusedParameters": false,
     "preserveWatchOutput": true,
     "skipLibCheck": true,
-    "strict": true,
-    "strictNullChecks": true
 
     // "outDir": "dist",
     // /* Basic Options */
@@ -27,13 +25,14 @@
     // "noEmit": false,
 
     // /* Strict Type-Checking Options */
-    // "noImplicitAny": true,
-    // "strictNullChecks": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
     // "strictFunctionTypes": true,
     // "strictBindCallApply": true,
     // "strictPropertyInitialization": false,
     // "noImplicitThis": true,
-    // "alwaysStrict": true,
+    "alwaysStrict": true,
     // "resolveJsonModule": true,
 
     // /* Experimental Options */

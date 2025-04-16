@@ -19,7 +19,6 @@
     "openapi-to-zod": "^0.0.9",
     "@openapi-codegen/typescript": "^11.0.1",
     "openapicmd": "^2.6.1",
-    "typescript": "^5.7.3",
     "openapi-typescript": "^7.6.1"
   },
   "publishConfig": {

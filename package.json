@@ -2,7 +2,7 @@
   "name": "wma-agegrade-calculator",
   "private": true,
   "description": "A set of node libraries to support wma agegrade calculator",
-  "version": "2025.03.17",
+  "version": "2025.04.16",
   "author": "emeraldjava",
   "homepage": "",
   "scripts": {

@@ -46,3 +46,5 @@ notes.md
 *.tsbuildinfo
 packages/wma-openapi-schema/dist/*
 packages/wma-calculator-lib/dist/*
+apps/ui/.next/*
+packages/wma-calculator-lib/dist/*
