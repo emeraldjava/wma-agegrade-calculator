@@ -9,7 +9,7 @@
     "types": "dist/index.d.ts",
     "scripts": {
       "clean": "rimraf ./dist",
-      "build": "tsc -p tsconfig.build.json",
+      "build": "tsc -p tsconfig.build.json -v",
       "dev": "npx tsc --watch",
       "test": "jest",
       "typecheck": "tsc"
