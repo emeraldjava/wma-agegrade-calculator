@@ -3,20 +3,17 @@
   "version": "1.0.0",
   "description": "wma-agegrade-data",
   "type": "module",
-  "main": "dist/index.js",
   "scripts": {
-    "copy": "copyfiles -u 1 src/data/* dist",
-    "compile": "tsc -p tsconfig.build.json",
-    "build": "pnpm run compile",
+    "build": "tsc -p tsconfig.build.json -v",
     "start": "node dist/index.js",
     "clean": "rimraf ./dist",
-    "all": "pnpm run clean && pnpm run build && pnpm run start"
+    "all": "pnpm run build && pnpm run start",
+    "dev": "ts-node src/index.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "copyfiles": "^2.4.1",
     "typescript": "^5.7.3"
   },
   "publishConfig": {
